@@ -1,7 +1,7 @@
 # Chat-Room
 National College of Ireland
 
-Distributed Systems Project
+Distributed Systems Project (April 2014)
 
 Objective
 
