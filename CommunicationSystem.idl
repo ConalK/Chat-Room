@@ -1,0 +1,34 @@
+// Declare the module
+module CommunicationSystemApp
+{
+    
+    // Create struct to encapsulate user details
+    struct AddressBook 
+    {
+        string name;
+        string homePhone;
+        string mobilePhone;
+        string address;
+        string email;
+    };
+    
+    // Declare the interfaces
+    interface Member
+    {
+        oneway void callBack(in string message);
+    };
+    
+    interface Communication
+    {
+        void newUser(in AddressBook newDetails);
+    	void getUser(in string name, out any newDetails);
+	oneway void joinRoom(in Member member, in string name);
+	oneway void chatRoom(in string chat, in string name);
+    };
+    
+    interface NumberGuess
+    {
+        long getNumber();
+        double guess(in double amount);
+    };
+};
